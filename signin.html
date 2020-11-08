@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign In</title>
+        <link href="css/all.css" rel="stylesheet" />
+
+        <link href="library/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        <link
+            href="library/font-awesome/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Sign In</h1>
+                <p class="lead"><a href="accounts.html">All accounts</a></p> 
+                <hr class="my-4" />
+                <p>
+                    <div class="signin">
+                    <form >
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="pass">Password:</label>
+                          <input type="password" class="form-control" id="pass" placeholder="Password" required>
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit">Submit</button>
+                    </form>
+                </div>
+                <a href="index.html">Go Back</a>
+                </p>
+            </div>
+        </div>
+        <script src="library/jquery/jquery.min.js"></script>
+        <script src="library/jquery/jquery-migrate.min.js"></script>
+        <script src="library/popper/popper.min.js"></script>
+        <script src="library/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/signin.js"></script>
+    </body>
+</html>

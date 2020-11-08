@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign In</title>
+        <link href="css/all.css" rel="stylesheet" />
+
+        <link href="library/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        <link
+            href="library/font-awesome/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Booking Form</h1>
+                <p class="lead"><a href="allBooking.html">All Bookings</a></p> 
+                <hr class="my-4" />
+                <p>
+                    <div class="signin">
+                    <form >
+                        <div class="form-group">
+                          <label for="name">Name:</label>
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required>                        
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="numberOfPeople">Number of people:</label>
+                            <select id="numberOfPeople" name ="numberOfPeople" class="form-control selectNumberOfPeople">
+                              <option selected>Choose...</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                          </div>
+                          <div class="form-add">
+                          </div>
+                          <div class="form-group">
+                            <label for="package">Package:</label>
+                            <select id="package" name ="package" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>Silver</option>
+                              <option>Gold</option>
+                              <option>Platinum</option>
+                            </select>
+                          </div>
+                        <button type="submit" class="btn btn-primary submit">Submit</button>
+                    </form>
+                </div>
+                <ul id="list"></ul>
+                <a href="index.html">Go Back</a>
+                </p>
+            </div>
+        </div>
+        <script src="library/jquery/jquery.min.js"></script>
+        <script src="library/jquery/jquery-migrate.min.js"></script>
+        <script src="library/popper/popper.min.js"></script>
+        <script src="library/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/booking.js"></script>
+    </body>
+</html>
